@@ -44,8 +44,8 @@ def mostrar_introduccion():
     with st.expander("Significanza"):
         st.markdown("""Con 615 millones de usuarios, es la plataforma de audio más popular a nivel global, según muestran los datos de Stavia y la página oficial de Spotify  https://newsroom.spotify.com/company-info/ anuncian que son """)
         st.markdown("""Número de suscriptores de servicios de música en streaming a nivel mundial durante el tercer trimestre de 2023, por plataforma""")
-        st.image("/Users/aguedagambon/Bootcamp/Github/Spotify_analisis/imagenes/Statista.jpg", use_column_width=True)
-    st.image("/Users/aguedagambon/Bootcamp/Github/Spotify_analisis/imagenes/reproductor.png", use_column_width=True, width=50, caption="Desde Vecteezy.com")
+        st.image("imagenes/Statista.jpg", use_column_width=True)
+    st.image("imagenes/reproductor.png", use_column_width=True, width=50, caption="Desde Vecteezy.com")
         
 #------------------------------EDA_2023------------------------------#
 
@@ -99,7 +99,7 @@ def mostrar_comparacion():
 
 #####################################################################
 with st.sidebar:
-    st.image("/Users/aguedagambon/Bootcamp/Github/Spotify_analisis/imagenes/spotifylogo.png", use_column_width=True, width=100)
+    st.image("imagenes/spotifylogo.png", use_column_width=True, width=100)
     st.write("## Navegación")
     diapositiva = st.radio(
         "Selecciona una Diapositiva",
