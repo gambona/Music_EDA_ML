@@ -84,17 +84,14 @@ def mostrar_powerbi():
     st.markdown(f"""<iframe width="100%" height="600" src="{powerbi_url}" frameborder="0" allowFullScreen="true"></iframe>""", unsafe_allow_html=True)
     st.write("En este panel interactivo podemos ver los artistas máss populares, la cantidad de playlist en las que se encuentran, y otras características de su música ")
 #-----------------------------Modelo 1------------------------------#
-def mostrar_comparacion():
-    st.header("Modelo 1")
-    st.write("Comparación de los datos de Airbnb en Amsterdam en 2016 y 2023")
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.image('imagenes/7barrios+airbnbt.png', use_column_width=True)
-        st.image('imagenes/output2.png', use_column_width=True)
-        
-    with col2:
-        st.image('imagenes/output_copy_2.png', use_column_width=True)
+def mostrar_ml():
+    st.header("Análisis Exploratorio de Datos (EDA)")
+    st.write("Datos descriptivos sobre este dataset.")
+    tab1, tab2 = st.tabs(['Matriz de confusión','Características'])
+    with tab1:
+        st.image('imagenes/7.png', use_column_width=True, width=100)
+    with tab2:
+        st.image('imagenes/8.png', use_column_width=True, width=100)
 #------------------------------MAPA------------------------------#
 
 #####################################################################
@@ -103,13 +100,13 @@ with st.sidebar:
     st.write("## Navegación")
     diapositiva = st.radio(
         "Selecciona una Diapositiva",
-        ("Introducción", "EDA", "Power BI", "Modelo de predicción"))
+        ("Introducción", "EDA", "Power BI", "Machine Learning"))
 
 funciones_diapositivas = {
     "Introducción": mostrar_introduccion,
     "EDA": mostrar_eda,
     "Power BI": mostrar_powerbi,
-    "Modelo de predicción": mostrar_comparacion,
+    "Machine Learning": mostrar_ml
 
 }
 funciones_diapositivas[diapositiva]()
