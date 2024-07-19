@@ -9,8 +9,11 @@ st.set_page_config(
 )
 #------------------------------INTRODUCCIÓN------------------------------#
 def mostrar_introduccion():
-    st.header("Análisis 2024 hits musicales y predicción de su popularidad")
-    st.write("Información:")
+    st.header("Análisis canciones más populares en plataformas de audio streaming 2024 ")
+    st.markdown("""
+                - Análisis Exploratorio de datos por plataforma de música en streaming
+                - Modelo Random Forest para predecir popularidad en Youtube
+                - Recomendaciones a artitas""")
     
         
     with st.expander('Datos'):
@@ -37,14 +40,14 @@ def mostrar_eda():
     st.header("Presencia de hits en las top plataformas de música en streaming")
     st.image('imagenes/1.png', use_column_width=True)
     st.write("")
+    st.header("Top 20 Artistas con más canciones en el top 2024")
+    st.write("Taylor Swift, Drake y Bad Bunny se posicionan en el top, con más de 60 canciones populares, media mucho más alta qu la media de 28.5 del top 20")
+    st.image('imagenes/2.png', use_column_width=True)
     st.write("")
     st.header("Cómo de nuevas son las canciones más populares?")
     st.write("El 40.26% de las canciones más populares salieron en el último año.")
     st.image('imagenes/3.png', use_column_width=True)
     st.write("")
-    st.header("Top 20 Artistas con más canciones en el top 2024")
-    st.write("Taylor Swift, Drake y Bad Bunny se posicionan en el top, con más de 60 canciones populares, media mucho más alta qu la media de 28.5 del top 20")
-    st.image('imagenes/2.png', use_column_width=True)
     st.write("")
     st.header("Canciones antiguas populares hoy")
     st.write("Encontramos 1 canción de los 80 como la má antigua popular hoy, 5 de los 90  y 4 de los 2000, con Eminem como top artisa con las 3 canciones más antiguas más populares a dia de hoy")
@@ -59,7 +62,7 @@ def mostrar_eda():
     st.header("Diagrama de dispersión")
     st.write("Existe una relación postiva entre el número de reproducciones en Spotify y el número de playlist en las que se encuentra la canción")
     st.image('imagenes/6.png', use_column_width=True)
-    st.write("Es por esto, que beneficia a los artistas que promocionar a los usuarios que guarden sus canciones en playlist, ya que de este modo se eleva la cantidad total de reproduciiones")
+    st.write("Es por esto, que beneficia a los artistas promocionar a los usuarios que guarden sus canciones en playlist, ya que de este modo se eleva la cantidad total de reproduciones")
 #------------------------------Power BI------------------------------#
 def mostrar_powerbi():
     st.write("Power BI")  
