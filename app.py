@@ -95,7 +95,6 @@ def mostrar_conclusión():
 #####################################################################
 
 with st.sidebar:
-    st.image("imagenes/spotify.png", use_column_width=True, width=100)
     diapositiva = st.radio(
         "Índice",
         ("Introducción", "EDA", "Power BI", "Machine Learning", "Conclusión"))
