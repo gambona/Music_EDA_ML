@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#1DB954"           # Verde Spotify
+backgroundColor = "#0E1117"        # Rich black
+secondaryBackgroundColor = "##1DB954"  # Negro Spotify
+textColor = "#FAFAFA"              # Blanco hueso
+font = "sans serif"
